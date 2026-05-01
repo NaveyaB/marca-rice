@@ -3,7 +3,7 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[100svh] flex items-center justify-center overflow-hidden bg-gradient-soft">
+    <section className="relative min-h-svh flex items-center justify-center overflow-hidden bg-gradient-soft">
       {/* Floating gradient orbs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden>
         <div className="absolute top-1/4 -left-32 h-96 w-96 rounded-full bg-brand/30 blur-3xl animate-float" />

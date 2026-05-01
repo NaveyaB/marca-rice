@@ -17,7 +17,7 @@ export function PortfolioMasonry({ limit }: { limit?: number }) {
           </Link>
         </div>
 
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-5 [column-fill:_balance]">
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-5 [[column-fill:balance]]">
           {items.map((p, i) => (
             <Link
               key={p.title}
@@ -32,7 +32,7 @@ export function PortfolioMasonry({ limit }: { limit?: number }) {
                   loading="lazy"
                   className={`w-full object-cover transition-transform duration-700 group-hover:scale-110 ${p.h === "tall" ? "h-96" : "h-72"}`}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/85 via-foreground/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-linear-to-t from-foreground/85 via-foreground/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="absolute inset-x-0 bottom-0 p-5 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                   <span className="inline-flex items-center gap-1 text-xs font-medium text-background bg-background/15 backdrop-blur px-3 py-1.5 rounded-full border border-background/30">
                     View case study <ArrowUpRight className="h-3 w-3" />
